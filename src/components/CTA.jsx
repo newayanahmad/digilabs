@@ -12,22 +12,17 @@ const CTA = () => {
                 <div className="flex max-md:flex-col items-center justify-center gap-2">
                     <Link
                         href="/"
-                        className="justify-between  max-md:w-[100%]  items-center bg-fuchsia-900 flex gap-2 px-4 py-3 rounded-lg"
+                        className="justify-between  max-md:w-[100%]  items-center bg-fuchsia-900 flex gap-2 px-4 text-white text-center text-base font-medium leading-5 grow whitespace-nowrap py-3 rounded-lg"
 
                     >
-                        <span className="text-white text-center text-base font-medium leading-5 grow whitespace-nowrap">
-                            Unlock your card
-                        </span>
+                        Unlock your card
                         <CreditCard className='text-white' />
                     </Link>
                     <Link
                         href="/"
-                        className="justify-between max-md:w-[100%] items-center bg-zinc-100 flex gap-2 px-4 py-3 rounded-lg"
+                        className="justify-between max-md:w-[100%] items-center bg-zinc-100 flex gap-2 px-4 py-3 rounded-lg text-gray-500 text-center text-base font-medium leading-5 grow whitespace-nowrap"
 
-                    >
-                        <span className="text-gray-500 text-center text-base font-medium leading-5 grow whitespace-nowrap">
-                            Customer support
-                        </span>
+                    >Customer support
                         <Headphones className='text-gray-500 h-5' />
                     </Link>
                 </div>

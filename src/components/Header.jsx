@@ -1,4 +1,5 @@
-import { ArrowDown, ChevronDown, LogIn, Menu } from "lucide-react";
+import { ChevronDown, LogIn, Menu } from "lucide-react";
+import Link from "next/link";
 
 function MyHeader(props) {
     return (
@@ -10,10 +11,10 @@ function MyHeader(props) {
                 className="justify-between items-center flex w-[1216px] max-w-full gap-5 pl-4 py-0.5 max-md:flex-wrap"
                 role="navigation"
             >
-                <span
-                    className="font-extrabold text-xl object-contain object-center  fill-neutral-900 overflow-hidden shrink-0 max-w-full my-auto"
+                <Link href="/"
+                    className="text-transparent bg-clip-text bg-linear-gradient animate-gradient-x font-extrabold text-xl max-w-full my-auto"
 
-                >Mode UI</span>
+                >Mode UI</Link>
                 <div
                     className="items-stretch hidden md:flex self-stretch justify-between gap-5 p-2 max-md:max-w-full max-md:flex-wrap"
                     role="menu"
@@ -40,7 +41,7 @@ function MyHeader(props) {
                         Contact
                     </div>
                 </div>
-                <div
+                <Link href="/"
                     className="justify-between items-stretch bg-zinc-100 self-stretch flex gap-2 px-4 py-2 rounded-lg"
                     role="menu"
                 >
@@ -54,7 +55,7 @@ function MyHeader(props) {
                         className=" aspect-square text-gray-500 object-contain object-center w-5 overflow-hidden shrink-0 max-w-full"
 
                     />
-                </div>
+                </Link>
                 <Menu className="block md:hidden" />
             </div>
         </header>

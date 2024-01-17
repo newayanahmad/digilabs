@@ -1,5 +1,7 @@
+"use client";
 import { ArrowRight, CreditCard, Expand } from 'lucide-react'
-import React from 'react'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 const SpendingDemo = () => {
     return (
@@ -11,22 +13,22 @@ const SpendingDemo = () => {
                 consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua.
             </div>
-            <span className="justify-center items-center self-center flex gap-2 mt-8 rounded-lg">
-                <div className="text-fuchsia-900 text-center text-base font-medium leading-5 grow whitespace-nowrap">
+            <Link href="/" className="justify-center items-center self-center flex gap-2 mt-8 rounded-lg">
+                <span className="text-fuchsia-900 text-center text-base font-medium leading-5 grow whitespace-nowrap">
                     Compare all Pro features
-                </div>
+                </span>
                 <ArrowRight className='text-fuchsia-900' />
-            </span>
+            </Link>
             <div className=" mt-24 mb-12 max-md:max-w-full max-md:my-10 ">
                 <div className="gap-5  flex max-md:flex-col items-center max-md:items-stretch max-md:gap-2">
-                    <div className="flex flex-col  items-center max-md:w-full max-md:ml-0">
+                    <motion.div initial={{ opacity: 0, x: -50 }} transition={{ delay: .25 }} whileInView={{ opacity: 1, x: 0 }} className="flex flex-col  items-center max-md:w-full max-md:ml-0">
                         <img
                             loading="lazy"
                             src='/phone.png'
                             className="items-center overflow-hidden  rounded-lg  "
                         />
-                    </div>
-                    <div className="flex flex-col items-stretch  max-md:w-full ">
+                    </motion.div>
+                    <motion.div initial={{ opacity: 0, x: 50 }} transition={{ delay: .25 }} whileInView={{ opacity: 1, x: 0 }} className="flex flex-col items-stretch  max-md:w-full ">
                         <div className="justify-center  items-center flex grow flex-col object-center w-full px-16 py-6 rounded-lg  max-md:max-w-full  max-md:px-5">
                             <div className="justify-center items-center border   flex w-[409px] max-md:w-[100%] object-contain max-w-full flex-col mr-4 mt-16 mb-9 p-7 rounded-xl border-solid border-purple-400 max-md:mr-2.5 max-md:mt-10 max-md:px-5">
                                 <div className="items-stretch self-stretch flex justify-between gap-5">
@@ -79,7 +81,7 @@ const SpendingDemo = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </span>

@@ -1,10 +1,8 @@
-
-import { Star } from "lucide-react";
-import Image from "next/image";
-
-function Review(props) {
+"use client";
+import { motion } from "framer-motion";
+function Review() {
     return (
-        <div className="justify-center items-center bg-white flex w-full flex-col px-20 max-md:max-w-full max-md:px-5">
+        <motion.div initial={{ opacity: 0, x: -200 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: .25, duration: .5 }} className="justify-center items-center bg-white flex w-full flex-col px-20 max-md:max-w-full max-md:px-5">
             <img
                 loading="lazy"
                 src="/wise.png"
@@ -29,7 +27,7 @@ function Review(props) {
                 />)}
 
             </div>
-        </div>
+        </motion.div>
     );
 }
 

@@ -1,8 +1,10 @@
+"use client";
+import { motion } from "framer-motion";
 
 const CompanyList = () => {
     return (
         <div className="justify-center items-center bg-white flex w-full flex-col px-16 py-12 max-md:max-w-full max-md:px-5">
-            <div className="justify-evenly items-center flex w-full gap-4 my-12 p-2 max-md:max-w-full flex-wrap max-md:my-10">
+            <motion.div initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: .25, duration: 1 }} className="justify-evenly items-center flex w-full gap-4 my-12 p-2 max-md:max-w-full flex-wrap max-md:my-10">
                 <div className=" ">
                     <img loading="lazy" src="/nuxt.svg" alt="" />
                 </div>
@@ -34,7 +36,7 @@ const CompanyList = () => {
                 <div className="aspect-[5.5] object-contain object-center w-[132px] overflow-hidden shrink-0 max-w-full">
                     <img loading="lazy" src="/behance.svg" alt="" />
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }
