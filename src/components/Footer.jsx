@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 function Footer() {
     return (
@@ -12,91 +13,91 @@ function Footer() {
                 across various platforms and devices
             </div>
             <div className="bg-zinc-100 self-stretch w-full shrink-0 h-px mt-16 mx-8 max-md:mr-2.5 max-md:mt-10" />
-            <div className="items-stretch self-center flex justify-around gap-5 mt-16 max-md:max-w-full max-md:flex-wrap max-md:mt-10">
+            <div className="items-start self-center  flex justify-around gap-5 mt-16 max-md:max-w-full max-md:flex-wrap max-md:mt-10">
                 <span className="items-stretch flex grow basis-[0%] flex-col">
-                    <div className="text-zinc-800 text-base font-bold leading-5 whitespace-nowrap">
+                    <Link href="/" className="text-zinc-800 text-base font-bold leading-5 whitespace-nowrap">
                         Company
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-6">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-6">
                         About us
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
                         Pricing
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
                         Contact us
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
                         Features
-                    </div>
+                    </Link>
                 </span>
                 <span className="items-stretch flex grow basis-[0%] flex-col">
-                    <div className="text-zinc-800 text-base font-bold leading-5 whitespace-nowrap">
+                    <Link href="/" className="text-zinc-800 text-base font-bold leading-5 whitespace-nowrap">
                         Product
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-6">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-6">
                         Figma design system
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
                         Ios kit
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
                         Android kit
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
                         Wireframe
-                    </div>
+                    </Link>
                 </span>
                 <span className="items-stretch flex grow basis-[0%] flex-col">
-                    <div className="text-zinc-800 text-base font-bold leading-5 whitespace-nowrap">
+                    <Link href="/" className="text-zinc-800 text-base font-bold leading-5 whitespace-nowrap">
                         Resources
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-6">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-6">
                         Templates
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
                         Landing pages
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
                         Documentation
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
                         Comp library
-                    </div>
+                    </Link>
                 </span>
-                <span className="items-stretch flex grow basis-[0%] flex-col">
-                    <div className="text-zinc-800 text-base font-bold leading-5 whitespace-nowrap">
+                <span className="items-stretch flex  basis-[0%] flex-col">
+                    <Link href="/" className="text-zinc-800 text-base font-bold leading-5 whitespace-nowrap">
                         Legal
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-6">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-6">
                         Privacy policy
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
                         Terms & Conditions
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
                         Disclaimer
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
                         Affiliate programme
-                    </div>
+                    </Link>
                 </span>
-                <span className="items-stretch flex grow basis-[0%] flex-col">
-                    <div className="text-zinc-800 text-base font-bold leading-5 whitespace-nowrap">
+                <span className="items-stretch flex basis-[0%]  flex-col">
+                    <Link href="/" className="text-zinc-800 text-base font-bold leading-5 whitespace-nowrap">
                         Support
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-6">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-6">
                         Help centre
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
                         Raise ticket
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
                         Report
-                    </div>
-                    <div className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
+                    </Link>
+                    <Link href="/" className="text-zinc-700 text-base font-medium leading-5 whitespace-nowrap mt-4">
                         Refund
-                    </div>
+                    </Link>
                 </span>
             </div>
             <div className="justify-between items-stretch self-center flex w-[108px] max-w-full gap-5 mt-24 max-md:mt-10">

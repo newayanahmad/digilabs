@@ -1,4 +1,5 @@
 import { ArrowRight, Globe, Key, Lock } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 
 const CardProgram = () => {
@@ -7,7 +8,7 @@ const CardProgram = () => {
             <div className="div text-neutral-900 text-center text-4xl font-semibold leading-10 max-w-[704px] mt-12 max-md:max-w-full max-md:mt-10">Elevating Card Programs with Cutting-Edge Technology</div>
             <p className="text-gray-500 text-center text-lg leading-7 self-center max-w-xl mt-4 max-md:max-w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <div className="justify-center items-center self-center flex gap-2 mt-8 rounded-lg">
-                <a href="#" className="link text-fuchsia-900 text-center text-base font-medium leading-5 grow whitespace-nowrap">Compare all Pro features</a>
+                <Link href="/" className="link text-fuchsia-900 text-center text-base font-medium leading-5 grow whitespace-nowrap">Compare all Pro features</Link>
                 <ArrowRight className='text-fuchsia-900 text-xs' />
             </div>
             <div className="self-stretch mt-24 mb-12 mx-8 p-4 max-md:max-w-full max-md:my-10">
