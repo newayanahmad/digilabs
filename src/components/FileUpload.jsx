@@ -4,8 +4,7 @@ import { Inbox, Loader2 } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useDropzone } from "react-dropzone"
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 
 
 const FileUpload = () => {
@@ -60,7 +59,6 @@ const FileUpload = () => {
     )
     return (
         <div className="p-2 bg-white  rounded-xl ">
-            <ToastContainer />
             <div
                 {...getRootProps({
                     className:
