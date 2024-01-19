@@ -1,3 +1,4 @@
+
 import AnnouncementComponent from '@/components/Announcement'
 import CTA from '@/components/CTA'
 import CardProgram from '@/components/CardProgram'
@@ -8,14 +9,20 @@ import Hero from '@/components/Hero'
 import Metrics from '@/components/Metrics'
 import Review from '@/components/Review'
 import SpendingDemo from '@/components/SpendingDemo'
-import Image from 'next/image'
+import getMetadata from './actions'
+import Email from '@/components/Email'
+import AdminLink from '@/components/AdminLink'
 
-export default function Home() {
+export default async function Home() {
+  const data = await getMetadata();
+
   return (
     <>
+      <AdminLink />
       <AnnouncementComponent />
-      <MyHeader />
-      <Hero />
+      <MyHeader image_url={data.logo_url} />
+      <Hero button_text={data.button_text} />
+      <Email />
       <CompanyList />
       <CardProgram />
       <SpendingDemo />

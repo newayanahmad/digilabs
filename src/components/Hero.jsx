@@ -2,7 +2,7 @@
 import { ArrowRight } from 'lucide-react'
 import { motion } from 'framer-motion'
 
-const Hero = () => {
+const Hero = ({ button_text }) => {
     return (
         <section className="flex w-full flex-col items-center pt-12 px-20 max-md:max-w-full max-md:px-5">
             <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: .5, duration: .5 }} className="text-fuchsia-900 text-center text-base font-medium leading-5 mt-11 max-md:max-w-full max-md:mt-10">
@@ -23,7 +23,7 @@ const Hero = () => {
                     className="text-white text-center text-base font-medium leading-5 grow whitespace-nowrap"
                     type="button"
                 >
-                    Unlock your Card
+                    {button_text}
                 </button>
                 <ArrowRight className='text-white' />
             </div>

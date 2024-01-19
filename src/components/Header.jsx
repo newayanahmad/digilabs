@@ -1,7 +1,8 @@
 import { ChevronDown, LogIn, Menu } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
-function MyHeader(props) {
+function MyHeader({ image_url }) {
     return (
         <header
             className="justify-center items-center border-b-[color:var(--Neutral-1000,#E6E7E9)] bg-white flex w-full flex-col px-16 py-5 border-b border-solid max-md:max-w-full max-md:px-5"
@@ -14,7 +15,7 @@ function MyHeader(props) {
                 <Link href="/"
                     className="text-transparent bg-clip-text bg-linear-gradient animate-gradient-x font-extrabold text-xl max-w-full my-auto"
 
-                >Mode UI</Link>
+                >{image_url && <img src={image_url} height={20} width={50} />}</Link>
                 <div
                     className="items-stretch hidden md:flex self-stretch justify-between gap-5 p-2 max-md:max-w-full max-md:flex-wrap"
                     role="menu"
