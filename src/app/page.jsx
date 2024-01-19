@@ -1,4 +1,5 @@
 
+"use client"
 import AnnouncementComponent from '@/components/Announcement'
 import CTA from '@/components/CTA'
 import CardProgram from '@/components/CardProgram'
@@ -9,12 +10,19 @@ import Hero from '@/components/Hero'
 import Metrics from '@/components/Metrics'
 import Review from '@/components/Review'
 import SpendingDemo from '@/components/SpendingDemo'
-import getMetadata from './actions'
 import Email from '@/components/Email'
 import AdminLink from '@/components/AdminLink'
+import { useLayoutEffect, useState } from 'react'
 
-export default async function Home() {
-  const data = await getMetadata();
+export default function Home() {
+  const [data, setData] = useState({})
+  useLayoutEffect(() => {
+    fetch("/api/get-data")
+      .then(res => res.json())
+      .then(data => setData(data))
+      .catch(err => console.log(err))
+  }
+    , [])
 
   return (
     <>
