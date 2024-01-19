@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const EmailList = () => {
     const [emails, setEmails] = useState([])
     useLayoutEffect(() => {
-        fetch("/api/get-emails")
+        fetch("/api/get-emails", { method: 'POST' })
             .then(res => res.json())
             .then(data => setEmails(data))
             .catch(err => toast("Unable to fetch emails", { type: "error" }))

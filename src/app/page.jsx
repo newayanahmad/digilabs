@@ -17,7 +17,7 @@ import { useLayoutEffect, useState } from 'react'
 export default function Home() {
   const [data, setData] = useState({})
   useLayoutEffect(() => {
-    fetch("/api/get-data")
+    fetch("/api/get-data", { method: "POST" })
       .then(res => res.json())
       .then(data => setData(data))
       .catch(err => console.log(err))
